@@ -2,9 +2,10 @@
   "name": "trip-mate-graphql-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/mamatagelanee07/trip-mate-graphql-server/issues"
   },
-  "homepage": "https://github.com/mamatagelanee07/trip-mate-graphql-server#readme"
+  "homepage": "https://github.com/mamatagelanee07/trip-mate-graphql-server#readme",
+  "dependencies": {
+    "apollo-datasource-rest": "^3.5.2",
+    "apollo-server": "^3.6.7",
+    "graphql": "^16.4.0",
+    "nodemon": "^2.0.16"
+  }
 }
