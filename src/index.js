@@ -20,4 +20,4 @@ server.listen({ port: process.env.PORT || 4000 }).then(({ url }).then(() => {
     🔉  Listening on port at ${url}
     📭  Query at https://studio.apollographql.com/dev
   `);
-});
+}));
