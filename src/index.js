@@ -15,7 +15,7 @@ const server = new ApolloServer({
 });
 
 const url = "https://trip-mate-graphql-server.herokuapp.com/";
-server.listen({ port: process.env.PORT || 4000 }).then(({ url }).then(() => {
+server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log(`
     🚀  Server is running!
     🔉  Listening on port at ${url}
