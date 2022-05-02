@@ -1,12 +1,13 @@
-const { ApolloServer } = require('apollo-server');
-const typeDefs = require('./schema');
-const resolvers = require('./resolvers');
+const { ApolloServer } = require("apollo-server");
+const typeDefs = require("./schema");
+const resolvers = require("./resolvers");
 
-const TripAPI = require('./datasources/trip-api');
+const TripAPI = require("./datasources/trip-api");
 
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  introspection: () => true, //Find alternative for schema production introspeaction
   dataSources: () => {
     return {
       tripAPI: new TripAPI(),
